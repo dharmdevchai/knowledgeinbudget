@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans",sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+}
+
+.about-section{
+    background: url('images/about/pic.jpg') no-repeat left;
+ 
+
+    background-color: #fdfdfd;
+    overflow: hidden;
+    height: 100%;
+    padding: 100px 0;
+    box-shadow: rgba(14, 30, 37, 0.5) 0px 2px 4px 0px, rgba(14, 30, 37, 0.2) 0px 2px 16px 0px;
+}
+
+
+.inner-container{
+    width: 55%;
+    float: right;
+    color: red;
+    border-radius: 15px;
+   
+    background: url('images/about/nature.png') no-repeat;
+    background-color: #fdfdfd;
+    background-size: cover;
+    overflow: hidden;
+    padding: 110px;
+
+
+}
+.inner-container h1{
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 900;
+    
+}
+
+.text{
+    font-size: 30px;
+    color: #33ff00;
+    line-height: 30px;
+    text-shadow: 3px 3px 3px #ff0000;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1{
+  color: #F85370;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-around;
+    font-weight: 700;
+    font-size: 13px;
+        flex-wrap: wrap;
+       
+}
+
+@media screen and (max-width:1200px){
+    .inner-container{
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .about-section{
+    
+        padding: 100px 40px;
+    }
+    .inner-container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about-section{
+        padding: 10px;
+    }
+    .inner-container{
+        padding: 60px;
+    }
+}
+span{
+  cursor: pointer;
+  font-size: 16px;
+text-align: center;
+padding: 10px;
+  width: 500px;
+  margin-top: 8px;
+}
+span:hover{
+background-image: linear-gradient(to right top, #f85370, #f35470, #ee5570, #e8556f, #e3566f);
+color: #fff;
+border-radius: 20px;
+transition: 0.5s;
+
+}
+.activated{
+  background-image: linear-gradient(to right top, #f85370, #f35470, #ee5570, #e8556f, #e3566f);
+  color: #fff;
+  border-radius: 20px;
+
+
+}
