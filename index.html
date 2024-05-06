@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+  <!-- Icon-->
+  <link rel="stylesheet" href="icons-1.8.1\font\bootstrap-icons.css">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+   <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  
+  <script src="core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  
+  <link href="bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+      <link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="admin/styles.css">
+   
+<script src="bootstrap-5.1.3-dist/js/myjquery.js"></script>
+
+  <title>Knowledge In Budget</title>
+  <style>a#navbarDropdown.nav-links.dropdown-toogle::after{
+  display: none;
+}</style>
+<script src="bower_components/jquery/dist/jquery.min.js"></script><script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script><script src="bower_components/datatables.net/js/jquery.dataTables.min.js"></script><script src="bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script><script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script><script src="bower_components/fastclick/lib/fastclick.js"></script><script src="dist/js/adminlte.min.js"></script><script src="bower_components/ckeditor/ckeditor.js"></script><script>
+$(function () {
+  // Datatable
+  $('#example1').DataTable()
+  //CK Editor
+  CKEDITOR.replace('editor1')
+});
+</script><script src="magnify/magnify.min.js"></script><script>
+$(function(){
+$('.zoom').magnify();
+});
+</script><input type="hidden" id="_w_simile" data-inspect-config="3"><script type="text/javascript" src="chrome-extension://dbjbempljhcmhlfpfacalomonjpalpko/scripts/inspector.js"></script></head>
+
+
+<!-- jQuery 3 -->
+
+<!-- Bootstrap 3.3.7 -->
+
+<!-- DataTables -->
+
+
+<!-- SlimScroll -->
+
+<!-- FastClick -->
+
+<!-- AdminLTE App -->
+
+<!-- CK Editor -->
+
+
+<!--Magnify -->
+
+
+<!-- Custom Scripts -->
+<body style="">
+
+
+<header>
+<div class="fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="lgsu">
+      <div class="container-fluid">
+          <a class="navbar-brand" id="logo" href="index.html">Knowledge In Budget</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button> 
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="contact_us.html">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="rate.html">Rate</a>
+                  </li>
+              </ul>
+
+              <form class="d-flex collapse" method="GET" action="index.html">
+                  <input class="form-control " type="text" name="search_key" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-primary" style="margin-left: -42px;" name="search" type="submit">
+                  <i class="bi bi-search"></i>
+                  </button>
+              </form>
+              <ul class="nav navbar-nav dropdown-toggle" style="align-items:center" ;="">
+        <li class="nav-item dropdown">
+          <!--Menu toggle button-->
+       
+          <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="modal" data-bs-target="#cart" aria-expanded="false">
+          <i class="bi bi-cart4"></i>
+          <span class="cart_count" style="    vertical-align: super; color:yellow;">0</span>
+        </a>
+          <ul class="dropdown-menu  dropdown-menu-macos dropdown-menu-dark mx-0 shadow" style="width: 220px; padding:5px;" aria-labelledby="navbarDropdown"> 
+            <li><a class="dropdown-item active" style="border-radius:5px;" href="#">You have <span class="cart_count"></span> item(s) in cart</a></li>
+            <li>  
+              <ul class="menu" id="cart_menu"></ul>
+            </li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" style="border-radius:5px;" href="#">Go to Cart</a></li>
+          </ul>
+          
+        </li><li>
+              <div id="lgsubtn">
+                  <a class="btn btn-danger" href="login.html">Login</a>
+                  <a class="btn btn-danger" href="registration.html">Sign Up</a>
+              </div>
+              </li>              
+
+              </ul>
+            
+            
+
+          </div>
+      </div>
+  </nav>
+</div>
+</header>
+<div style="padding:0 10px 0 10px;" id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+<div class="carousel-indicators">
+  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
+</div>
+<div class="carousel-inner">
+  <div class="carousel-item">
+    <img src="images/latest_runnings/banner1.jpg" class="d-block w-100" style="border-radius:10px;min-height:230px;" alt="...">
+    <div class="carousel-caption d-none d-md-block">
+      <!--<h5>First slide label</h5>
+      <p>Some representative placeholder content for the first slide.</p>-->
+    </div>
+  </div>
+  <div class="carousel-item">
+    <img src="images/latest_runnings/banner2.jpg" class="d-block w-100" style="border-radius:10px;min-height:230px;" alt="...">
+    <div class="carousel-caption d-none d-md-block">
+      <!--<h5>Second slide label</h5>
+      <p>Some representative placeholder content for the second slide.</p>-->
+    </div>
+  </div>
+  <div class="carousel-item active">
+    <img src="images/latest_runnings/banner3.jpg" class="d-block w-100" style="border-radius: 10px;min-height:230px;" alt="...">
+    <div class="carousel-caption d-none d-md-block">
+      <!--<h5>Third slide label</h5>
+      <p>Some representative placeholder content for the third slide.</p>-->
+    </div>
+  </div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Next</span>
+</button>
+</div>
+<div id="main_items" class="row" style="margin:0 10px 0 10px; ">
+<div id="sidebar" class="col-3 bg-light  border" style="padding:0px">
+<div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="border-radius:5px; height:100%;overflow: hidden;">
+  <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+    <svg style="display:none;" class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+    <span class="fs-4">Categories</span>
+  </a>
+  <hr>
+  <ul class="nav nav-pills flex-column mb-auto">
+    
+
+  
+  <li style="margin-bottom:5px;">
+  <a href="index.html?search_key=Book&amp;search=" class="nav-link text-white active">
+    <svg style="display:none;" class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+   Books
+  </a>
+</li><li style="margin-bottom:5px;">
+  <a href="index.html?search_key=Equipment&amp;search=" class="nav-link text-white active">
+    <svg style="display:none;" class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+   Equipments
+  </a>
+</li><li style="margin-bottom:5px;">
+  <a href="index.html?search_key=Old Is Gold&amp;search=" class="nav-link text-white active">
+    <svg style="display:none;" class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+   Old Is Golds
+  </a>
+</li><li style="margin-bottom:5px;">
+  <a href="index.html?search_key=Guide&amp;search=" class="nav-link text-white active">
+    <svg style="display:none;" class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+   Guides
+  </a>
+</li><li style="margin-bottom:5px;">
+  <a href="index.html?search_key=Numerical  Solution Set&amp;search=" class="nav-link text-white active">
+    <svg style="display:none;" class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+   Numerical  Solution Sets
+  </a>
+</li><li style="margin-bottom:5px;">
+  <a href="index.html?search_key=Question Set&amp;search=" class="nav-link text-white active">
+    <svg style="display:none;" class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+   Question Sets
+  </a>
+</li>
+
+
+
+
+    <!--<li class="nav-item">
+      <a href="#" class="nav-link active " aria-current="page">
+        <svg style="display:none;"class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+        Books
+      </a>
+    </li>
+  -->
+  </ul>
+
+  
+</div>  </div>   
+<div class="col bg-light  border" style="padding: 5px 5px 5px 5px;">
+<center><h2>Feature Propducts</h2></center>
+
+<div class=" d-flex album py-0 bg-light" style="border-radius:5px; height:100%;    flex-direction: column;">
+  <div class="container" style="padding:0;">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+
+
+
+
+
+
+
+
+  
+
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="images/products/noimage.jpg" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-id="2" class="pro_modal" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveaspectratio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+          <div class="card-body" style="height: 150px;
+          overflow: hidden;">
+            <p class="card-text" style="text-align:justify;">Math</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+              <form action="actions/add_to_cart.html" method="GET">
+               <div style="    display: flex;"><button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-id="2" class=" pro_modal btn btn-sm btn-outline-secondary">View</button>
+                <input name="quantity" type="number" class="form-control" placeholder="1" style="width:30%;margin-left:5px;border: 1px solid green; height:40%;">
+               </div> 
+               <div style="display: flex;">
+ <input style="margin-top:5px;" type="submit" name="add_to_cart" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-id="2" value="Add to Cart">
+ <button style="margin-top:5px;margin-left:5px;" type="button" data-bs-toggle="modal" data-bs-target="#owner_profile" data-id="2" class=" owner_pro_modal btn btn-sm btn-outline-secondary">Owner Profile</button>
+ </div>
+    <input type="hidden" name="product_id" value="2">
+                </form>
+              </div>
+              <small class="text-muted">Rs. 150</small>
+            </div>
+           
+                </div>
+        </div>
+      </div>
+  
+    
+
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="images/products/Chemistry.jpg" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-id="1" class="pro_modal" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveaspectratio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+          <div class="card-body" style="height: 150px;
+          overflow: hidden;">
+            <p class="card-text" style="text-align:justify;">Chemistry</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+              <form action="actions/add_to_cart.html" method="GET">
+               <div style="    display: flex;"><button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-id="1" class=" pro_modal btn btn-sm btn-outline-secondary">View</button>
+                <input name="quantity" type="number" class="form-control" placeholder="1" style="width:30%;margin-left:5px;border: 1px solid green; height:40%;">
+               </div> 
+               <div style="display: flex;">
+ <input style="margin-top:5px;" type="submit" name="add_to_cart" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-id="1" value="Add to Cart">
+ <button style="margin-top:5px;margin-left:5px;" type="button" data-bs-toggle="modal" data-bs-target="#owner_profile" data-id="1" class=" owner_pro_modal btn btn-sm btn-outline-secondary">Owner Profile</button>
+ </div>
+    <input type="hidden" name="product_id" value="1">
+                </form>
+              </div>
+              <small class="text-muted">Rs. 320</small>
+            </div>
+           
+                </div>
+        </div>
+      </div>
+  
+                      </div>
+    <nav aria-label="Page navigation example">
+<ul class="pagination justify-content-between">
+  <li class="page-item disabled">
+    <a class="page-link" href="#" tabindex="-1">Previous</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="#">Next</a>
+  </li>
+</ul>
+</nav>
+  
+  </div>
+</div>
+
+
+
+
+<!-- Modal -->
+
+
+<div class="modal fade" id="staticBackdrop">
+<div class="modal-dialog modal-dialog-scrollable">
+<div class="modal-content">
+  <div class="modal-header">
+    <h4 class="modal-title"><b></b></h4>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+  <div class="modal-body">
+     <div class="row" style="flex-wrap:nowrap;    max-width: 250px;">
+       <div class="col-md-6" style="width:fit-content;">
+         <div class="prodimg">
+         </div>
+        </div>
+       <div class="col-md-6 " style="width:fit-content;">
+          <div class="row" style="flex-wrap:nowrap;    margin-left: 50px;">
+            <div class="col-md-6"><b>
+              <label>Category</label><br>
+              <label>Price</label><br><br>
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Description</a>
+                </li>
+              </ul></b>
+            </div>
+            <div class="col-md-6 " style="width:fit-content;margin-left: 40px;">
+              <label class="cat"></label><br>
+              <label class="price"></label><br>
+            </div>
+          </div>
+
+          <div class="row" style="       margin-left: 50px; text-align: justify;">
+        
+          <label class="desc "></label><br>
+          
+          </div>
+        
+        </div>
+      </div>
+    
+    
+    
+    
+    
+    
+    </div>
+
+<div class="modal-footer">
+  <form action="actions/add_to_cart.html" method="GET">
+  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+  <input type="hidden" name="product_id" class="product_id">
+  <input type="submit" name="add_to_cart" value="Add To Cart " class="btn btn-primary">
+  </form>
+</div>
+</div>
+</div>
+</div>    
+
+
+<script>
+
+$(function(){
+$(".pro_modal").click(function(){   
+  var id = $(this).data('id');
+get_product_info(id);
+})})
+
+
+function get_product_info(id){
+$.ajax({
+  type: 'GET',
+  url: 'products_row.html',
+  data: {id:id},
+  dataType: 'json',
+  success: function(response){
+    $('.cat').html(response.catname);
+    $('.price').html(response.price);
+    $('.desc').html(response.proddesc);
+    $('.product_id').val(id);
+    $('.modal-title').html(response.prodname);
+if(response.prodimg!=""){
+var img="images/products/"+response.prodimg;}
+else{
+var img ="images/products/noimage.jpg";}
+$('.prodimg').html("<img style="+"vertical-align:middle;overflow:hidden;height:200px;"+" src="+img+">");
+}
+});
+}
+
+
+
+$(function(){
+$(".owner_pro_modal").click(function(){   
+  var id = $(this).data('id');
+get_owner_info(id);
+})})
+
+function get_owner_info(id){
+$.ajax({
+  type: 'GET',
+  url: 'owner_row.html',
+  data: {id:id},
+  dataType: 'json',
+  success: function(response){
+    $('.name').html(response.firstname+' '+response.lastname);
+    $('.address').html(response.address);
+    $('.email').html(response.email);
+    $('.owner_id').html(id);
+    $('.contact').html(response.contact_info);
+if(response.photo!=""){
+var img="images/users/"+response.photo;}
+else{
+var img ="images/users/profile.jpg";}
+$('.profile_image').html("<img style="+"vertical-align:middle;border-radius:100px;overflow:hidden;height:200px;width:200px;"+" src="+img+">");
+}
+});
+}
+
+
+
+
+
+</script></div> 
+</div> 
+
+
+
+
+<div class="container ">
+<footer class="pt-5">
+  <div class="row">
+    <div class="col-2">
+      <h5>Latest</h5>
+      <ul class="nav flex-column" style="
+  overflow: hidden;
+  align-items: flex-start;">
+        
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Books</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Old is Gold</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Guide</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Equipments</a></li>
+      </ul>
+    </div>
+
+    <div class="col-2">
+      <h5>Old</h5>
+      <ul class="nav flex-column" style="
+  overflow: hidden;
+  align-items: flex-start;">
+       
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Books</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Old is Gold</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Guide</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Equipments</a></li>
+      </ul>
+    </div>
+
+    <div class="col-2">
+      <h5>Updates</h5>
+      <ul class="nav flex-column" style="
+  overflow: hidden;
+  align-items: flex-start;">
+        
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Books</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Old is Gold</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Guide</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Equipments</a></li>
+      </ul>
+    </div>
+
+    <div class="col-4 offset-1">
+    <form action="actions/subscribe.html" method="GET">
+        <h5>Subscribe to our sites</h5>
+        <p>Monthly digest of whats new and exciting from us.</p>
+        <div class="d-flex w-100 gap-2">
+        
+          <label for="newsletter1" class="visually-hidden">Email address</label>
+           <input id="email" name="email" type="email" class="form-control" placeholder="Email address" required="">
+            <input class="btn btn-primary" type="submit" name="subscribe" value="Subscribe">
+                       
+         
+   
+        
+
+        </div>
+        </form>
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-between py-4 my-4 border-top">
+    <p>© 2021 Company, Inc. All rights reserved.</p>
+    <ul class="list-unstyled d-flex" style="
+  overflow: hidden;
+  align-items: flex-start;">
+      <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+      <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+      <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+    </ul>
+  </div>
+</footer>
+</div><!-- owner profile-->
+<div class="modal fade" id="owner_profile">
+  <div class="modal-dialog" style="">
+
+      <div class="modal-content">
+
+          <div class="modal-header">
+            <h4><b>Owner Profile</b></h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+              </button>
+          </div>
+
+          <div class="modal-body">
+         
+              <div class="row">
+                  <div class="col-md-4">
+                      <div class="profile_image">  </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="profile-head">
+                                  <h5 class="name"></h5>
+                                  <h6>
+                                      Owner
+                                  </h6>
+                                  <p class="address"></p>
+                          <ul class="nav nav-tabs" id="myTab" role="tablist">
+                              <li class="nav-item">
+                                  <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
+                              </li>
+
+                          </ul>
+                      </div>
+                  </div>
+                  
+              </div>
+
+
+
+              <div class="row">
+                  <div class="col-md-4">
+                      <div class="profile-work">
+                          <!--<p>Work As  </p>
+                          <a href="">Students</a><br>
+                          <a href="">12th standard</a><br>
+                          
+                          <p>SKILLS</p>
+                          <a href="">Web Designer</a><br>
+                          <a href="">Web Developer</a><br>
+                          <a href="">Java</a><br>
+                          <a href="">C and C++ </a><br>
+                          <a href="">html, .Net</a><br> -->
+                      </div>
+                  </div>
+                  <div class="col-md-8">
+                      <div class="tab-content profile-tab" id="myTabContent">
+                          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                      <div class="row">
+                                          <div class="col-md-6">
+                                              <label>User Id</label>
+                                          </div>
+                                          <div class="col-md-6">
+                                              <p class="owner_id"></p>
+                                          </div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="col-md-6">
+                                              <label>Name</label>
+                                          </div>
+                                          <div class="col-md-6">
+                                              <p class="name"></p>
+                                          </div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="col-md-6">
+                                              <label>Email</label>
+                                          </div>
+                                          <div class="col-md-6">
+                                              <p class="email"></p>
+                                          </div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="col-md-6">
+                                              <label>Phone</label>
+                                          </div>
+                                          <div class="col-md-6">
+                                              <p class="contact"></p>
+                                          </div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="col-md-6">
+                                              <label>Profession</label>
+                                          </div>
+                                          <div class="col-md-6">
+                                              <p class="profession">Student</p>
+                                          </div>
+                                      </div>
+                          </div>
+                         
+                      </div>
+                  </div>
+              </div>  
+          <div> 
+
+      </div>
+  </div>
+</div>
+</div></div>
+
+
+
+
+<!-- user profile setting -->
+<script>
+
+function validate_user_profile_update(){
+  var new_pass=document.user_profile_update_form.password.value;
+  var curr_pass=document.user_profile_update_form.curr_password.value;
+  var contact=document.user_profile_update_form.contact_info.value;
+  if(new_pass.length<8 || curr_pass.length<8){
+          alert("Password must have atleast 8 character.");
+    return false;	
+      }else if(contact.length!=10){
+    alert("Conatct must be Of 10 digit");
+    return false;
+  }else{
+    return true;
+  }
+     
+}
+
+
+
+</script>
+<div class="modal fade" id="profile_setting">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+          <h4><b>User Profile</b></h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+              </button>
+            
+          </div>
+          
+          <div class="modal-body">
+            <form class="form-horizontal" method="POST" action="profile_update.html?return=index.html" enctype="multipart/form-data" name="user_profile_update_form" onsubmit="return validate_user_profile_update()">
+              <div class=" row justify-content-space-between " style="margin-top:5px;">
+                  <label for="email" class="col-sm-3 control-label">Email</label>
+
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="email" name="email" value=" " required="">
+                  </div>
+              </div>
+              <div class=" row justify-content-space-between " style="margin-top:5px;">
+                  <label for="password" class="col-sm-3 control-label">Password</label>
+
+                  <div class="col-sm-9"> 
+                    <input type="password" class="form-control" id="password" name="password" value="" required="">
+                  
+                  </div>
+              </div>
+              <div class=" row justify-content-space-between " style="margin-top:5px;">
+                  <label for="firstname" class="col-sm-3 control-label">First name</label>
+
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="firstname" name="firstname" value="" required="">
+                  </div>
+              </div>
+              <div class=" row justify-content-space-between " style="margin-top:5px;">
+                  <label for="lastname" class="col-sm-3 control-label">Last name</label>
+
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="lastname" name="lastname" value="">
+                  </div>
+              </div>
+              <div class=" row justify-content-space-between " style="margin-top:5px;">
+                  <label for="contact_info" class="col-sm-3 control-label">Contact No.</label>
+
+                  <div class="col-sm-9">
+                    <input type="number" class="form-control" id="contact_info" name="contact_info" value="">
+                  </div>
+              </div>
+              <div class=" row justify-content-space-between " style="margin-top:5px;">
+                  <label for="address" class="col-sm-3 control-label">Address</label>
+
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="address" name="address" value="">
+                  </div>
+              </div>
+              <div class=" row justify-content-space-between " style="margin-top:5px;">
+                  <label for="photo" class="col-sm-3 control-label">Photo:</label>
+
+                  <div class="col-sm-9">
+                    <input type="file" id="photo" name="photo">
+                  </div>
+              </div>
+              <hr>
+              <div class=" row justify-content-space-between " style="margin-top:5px;">
+                  <label for="curr_password" class="col-sm-3 control-label">Current Password:</label>
+
+                  <div class="col-sm-9">
+                    <input type="password" class="form-control" id="curr_password" name="curr_password" placeholder="input current password to save changes" required="">
+                  </div>
+              </div>
+          </form></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default btn-flat pull-left" data-bs-dismiss="modal"><i class="bi bi-close"></i> Close</button>
+            <button type="submit" class="btn btn-success btn-flat" name="save"><i class="bi bi-check-square-o"></i> Save</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<!-- user profile-->
+<div class="modal fade" id="profile">
+  <div class="modal-dialog">
+
+      <div class="modal-content">
+
+          <div class="modal-header">
+            <h4><b>User Profile</b></h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+              </button>
+          </div>
+
+          <div class="modal-body">
+         
+              <div class="row">
+                  <div class="col-md-4">
+                      <div class="profile-img">                           <img src="images/users/profile.jpg" height="150px" width="150px" style="border-radius:100px;">                             </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="profile-head">
+                                  <h5 class="name"> </h5>
+                                  <h6>
+                                      User
+                                  </h6>
+                                  <p class="proile-rating address"></p>
+                          <ul class="nav nav-tabs" id="myTab" role="tablist">
+                              <li class="nav-item">
+                                  <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
+                              </li>
+
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-md-2 edit_profile_button">
+                      <a data-bs-toggle="modal" href="#profile_setting" class="btn btn-primary">Edit Profile</a>
+                  </div>
+              </div>
+
+
+
+              <div class="row">
+                  <div class="col-md-4">
+                      <div class="profile-work">
+                          <!--<p>Work As  </p>
+                          <a href="">Students</a><br>
+                          <a href="">12th standard</a><br>
+                          
+                          <p>SKILLS</p>
+                          <a href="">Web Designer</a><br>
+                          <a href="">Web Developer</a><br>
+                          <a href="">Java</a><br>
+                          <a href="">C and C++ </a><br>
+                          <a href="">html, .Net</a><br> -->
+                      </div>
+                  </div>
+                  <div class="col-md-8">
+                      <div class="tab-content profile-tab" id="myTabContent">
+                          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                      <div class="row">
+                                          <div class="col-md-6">
+                                              <label>User Id</label>
+                                          </div>
+                                          <div class="col-md-6">
+                                              <p class="user_id"></p>
+                                          </div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="col-md-6">
+                                              <label>Name</label>
+                                          </div>
+                                          <div class="col-md-6">
+                                              <p class="name"> </p>
+                                          </div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="col-md-6">
+                                              <label>Email</label>
+                                          </div>
+                                          <div class="col-md-6">
+                                              <p class="email"></p>
+                                          </div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="col-md-6">
+                                              <label>Phone</label>
+                                          </div>
+                                          <div class="col-md-6">
+                                              <p class="phone_no"></p>
+                                          </div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="col-md-6">
+                                              <label>Profession</label>
+                                          </div>
+                                          <div class="col-md-6">
+                                              <p class="profession">Student</p>
+                                          </div>
+                                      </div>
+                          </div>
+                         
+                      </div>
+                  </div>
+              </div>  
+          <div> 
+
+      </div>
+  </div>
+</div>
+</div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- donation Modal-->
+
+<div class="modal fade" id="donation">
+  <div class="modal-dialog">
+      <div class="modal-content" style="    background: linear-gradient(to right bottom, hsl(236, 50%, 50%), hsl(195, 50%, 50%));">
+          <div class="modal-header">
+          <h4 class="modal-title" style="background: linear-gradient(to right bottom, hsl(236, 50%, 50%), hsl(195, 50%, 50%));
+  border-radius: 100px;
+  padding: 5px 20px;"><b>Donation</b></h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                </button>
+            
+          </div>
+          <div class="modal-body">
+      <div style="color:white;">
+      Knowledge In Budget Community<br>
+      Rohini-1, Shreerapur, Rupandehi, Nepal<br>
+      Dear Users,<br><br>
+<div style="text-align: justify;">
+Greetings. My name is Dharmdev Chai and Our Community faces Some Issue. We hope this letter finds you well. As you may know, Our organization working for the Student to help them to get the Study Materials in leastmoney  . We’re pleased to invite you to be an important part of this exciting process.
+We are looking for donar/sponsor to help us upgrading the feature of this site and make the education reach to everyone.
+SO if your are interested to help us then your can donates us a little money on following things. Your little support make the student life brighter..</div>
+<br><br>
+
+<img style="padding-right:5px;border-radius:100px;height:35px;" alt="Image result for icon of esewa" id="dimg_1" src="data:image/png;base64,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" data-atf="1" data-frt="0">Esewa ID: <b>9817535102</b><br>
+<i class="bi bi-phone-fill" style="font-size:35px;"></i><span style="    vertical-align: super;">Mobile Number:<b>9817535102</b></span>
+
+</div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default btn-flat pull-left" data-bs-dismiss="modal"><i class="bi bi-close"></i> Close</button>
+            <button type="submit" class="btn btn-success btn-flat" name="save"><i class="bi bi-check-square-o"></i> <a style="    color: white;
+  text-decoration: none;" href="actions/logout.html">Ok</a></button>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+<!-- Cart Modal-->
+<div class="modal fade" id="cart">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title"><b>Cart</b></h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+
+            </button>
+            
+          </div>
+          <a id="btnEmpty" href="actions/empty_cart.html" style="    display: flex; flex-direction: row-reverse;margin-right:1.25rem;">Empty Cart</a>
+
+          <div class="modal-body" style="overflow:scroll;">
+             <div id="shopping-cart" style="min-width:700px;">
+              <div class="cart_items">
+                    <script>
+
+$(function(){
+$('.rmvbtn').click(function(){   
+  var id = $(this).data('id');
+delete_item(id);
+})
+
+
+
+})
+
+
+function delete_item(id){
+$.ajax({
+  type: 'GET',
+  url: 'actions/delete_cart_item.html',
+  data: {id:id},
+
+  success: function(){
+
+} });
+}
+
+
+</script>                    </div><table class="tbl-cart" cellpadding="10" cellspacing="1">
+                <tbody style="min-width:550px;">
+                  <tr>
+                    <th style="text-align:left;">Name</th>
+
+                    <th style="text-align:left;">Owner</th>
+
+
+                    <th style="text-align:right;" width="5%">Quantity</th>
+
+                    <th style="text-align:right;" width="10%">Unit Price</th>
+
+                    <th style="text-align:right;" width="10%">Price</th>
+
+                    <th style="text-align:center;" width="5%">Remove</th>
+
+                  </tr>
+                  
+                </tbody>
+              </table>		
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default btn-flat pull-left" data-bs-dismiss="modal"><i class="bi bi-close"></i> Close</button>
+            <button type="submit" class="btn btn-success btn-flat" name="save" data-bs-dismiss="modal"><i class="bi bi-check-square-o"></i> Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+
+<script>
+$(function(){
+$("#cart").click(function(){   
+$.ajax({
+  url: 'cart_row.html',
+type:  'POST',
+dataType: 'json',
+  success: function(data){
+$('.cart_items').html(data.proid);
+ 
+    
+  
+  }
+})
+})
+});
+</script>
+
+
+
+
+
+
+
+
+</body></html>
