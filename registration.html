@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="login_registration.css">
+ <!-- For  icons  -->
+ <link rel="stylesheet" href="icons-1.8.1\font\bootstrap-icons.css">
+ <script>
+    function validate_registration_form(){
+var password=document.registration_form.password.value;
+var repassword=document.registration_form.repassword.value;
+if(password.length<8){
+alert("Password length must have atleat 8 characters.");
+return false;
+}else if(password!=repassword) {
+  alert("Unmatched passwords");
+  return false;
+}else{
+  return true;
+}}
+    </script>
+  <title>Registration form</title>
+<input type="hidden" id="_w_simile" data-inspect-config="3"><script type="text/javascript" src="chrome-extension://dbjbempljhcmhlfpfacalomonjpalpko/scripts/inspector.js"></script></head>
+
+<body>
+  <div class="background"></div>
+    <div class="container">
+      <h2>Registration Form</h2>
+
+      
+  
+      <form action="actions/register.html" method="POST" name="registration_form" onsubmit=" return validate_registration_form()">
+
+          <div class="form-item">
+          <span class="bi bi-person-circle"></span>
+              <input type="text" name="firstname" id="firstname" placeholder="First Name" required="">
+          </div>
+          <div class="form-item">
+          <span class="bi bi-person-circle"></span>
+              <input type="text" name="lastname" id="lastname" placeholder="Last Name">
+          </div>
+          <div class="form-item">
+          <span class="bi bi-envelope-check"></span>
+              <input type="email" name="email" id="email" placeholder="Email" required="">
+          </div>
+          <div class="form-item">
+          <span class="bi bi-lock"></span>
+              <input type="password" name="password" id="password" placeholder="Password" required="">
+
+          </div>
+          <div class="form-item">
+          <span class="bi bi-lock"></span>
+              <input type="password" name="repassword" id="repassword" placeholder="Confirm Password" required="">
+
+          </div>
+
+          <button type="submit" name="register"> Register </button>
+          
+          <p>Old User ? <a href="login.html">Sign In</a></p>
+      </form>
+
+  </div>
+  
+
+
+</body></html>
